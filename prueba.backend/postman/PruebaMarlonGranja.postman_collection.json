@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "1001166e-012c-4020-944f-fea208adbf28",
+		"name": "PruebaMarlonGranja",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "validarUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44334/api/prueba/Autenticar/validarUsuario?usuario=prueba&contrasena=Prueba123",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44334",
+					"path": [
+						"api",
+						"prueba",
+						"Autenticar",
+						"validarUsuario"
+					],
+					"query": [
+						{
+							"key": "usuario",
+							"value": "prueba"
+						},
+						{
+							"key": "contrasena",
+							"value": "Prueba123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearTarea",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 0,\r\n    \"Titulo\": \"Tarea Emergente\",\r\n    \"Descripcion\": \"información importante\",\r\n    \"FechaCreacion\": \"2024-08-02\",\r\n    \"FechaVencimiento\": \"2024-08-31\",\r\n    \"Completada\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44334/api/prueba/CRUD/CrearTarea",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44334",
+					"path": [
+						"api",
+						"prueba",
+						"CRUD",
+						"CrearTarea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modificarTarea",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 3,\r\n    \"Titulo\": \"Tarea Emergente\",\r\n    \"Descripcion\": \"Modificado\",\r\n    \"FechaCreacion\": \"2024-08-02\",\r\n    \"FechaVencimiento\": \"2024-08-31\",\r\n    \"Completada\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44334/api/prueba/CRUD/ModificarTarea",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44334",
+					"path": [
+						"api",
+						"prueba",
+						"CRUD",
+						"ModificarTarea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerTarea",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44334/api/prueba/CRUD/ObtenerTarea?id=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44334",
+					"path": [
+						"api",
+						"prueba",
+						"CRUD",
+						"ObtenerTarea"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarTarea",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44334/api/prueba/CRUD/EliminarTarea?id=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44334",
+					"path": [
+						"api",
+						"prueba",
+						"CRUD",
+						"EliminarTarea"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

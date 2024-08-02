@@ -1,0 +1,16 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/marlon_granja
+/packages
+/prueba.aplicacion/bin/Debug
+/prueba.aplicacion/obj/Debug
+/prueba.backend/obj/Debug
+/prueba.backend/bin
+/prueba.dominio/bin/Debug
+/prueba.dominio/obj/Debug
+/prueba.ioc/bin/Debug
+/prueba.ioc/obj/Debug
+/prueba.repositorio/bin/Debug
+/prueba.repositorio/obj/Debug
